@@ -54,8 +54,23 @@
 					  </div>
 
 					  <div class="form-group">
+						    <label for="exampleInputEmail1">Email</label>
+						    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+					  </div>
+					  <div class="form-group">
+						    <label for="exampleInputEmail1">Nomor telepon</label>
+						    <input name="nomor_telepon" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nomor telepon">
+					  </div>
+
+					  <div class="form-group">
 					    <label for="exampleFormControlTextarea1">Alamat</label>
 					    <textarea name="alamat" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					  </div>
+
+
+					  <div class="form-group">
+					    <label for="exampleFormControlTextarea1">Pesan</label>
+					    <textarea name="pesan" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					  </div>
 			      </div>
 			      <div class="modal-footer">
@@ -73,7 +88,10 @@
 			<th>NAMA BELAKANG</th>
 			<th>JENIS KELAMIN</th>
 			<th>AGAMA</th>
+			<th>EMAIL</th>
+			<th>NOMOR TELEPON</th>
 			<th>ALAMAT</th>
+			<th>PESAN</th>
 			<th>AKSI</th>
 		</tr>
 
@@ -83,7 +101,10 @@
 			<td>{{$siswa -> nama_belakang}}</td>
 			<td>{{$siswa -> jenis_kelamin}}</td>
 			<td>{{$siswa -> agama}}</td>
+			<td>{{$siswa -> email}}</td>
+			<td>{{$siswa -> nomor_telepon}}</td>
 			<td>{{$siswa -> alamat}}</td>
+			<td>{{$siswa -> pesan}}</td>
 			<td><a href="/siswa/{{$siswa->id}}/edit" class="btn btn-warning btn-sm">Edit</a></td>
 			<td><a href="/siswa/{{$siswa->id}}/delete" class="btn btn-danger btn-sm" onclick="return confirm('yakin mau di hapus ?')">Delete</a></td>
 		</tr>

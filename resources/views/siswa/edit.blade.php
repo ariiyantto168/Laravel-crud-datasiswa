@@ -34,6 +34,26 @@
 							    <label for="exampleInputEmail1">Agama</label>
 							    <input name="agama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Agama" value="{{$siswa->agama}}">
 					    </div>
+					    <div class="form-group">
+						    <label for="exampleInputEmail1">Email</label>
+						    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+					  </div>
+					  <div class="form-group">
+						    <label for="exampleInputEmail1">Nomor telepon</label>
+						    <input name="nomor" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nomor telepon">
+					  </div>
+
+					  <div class="form-group">
+					    <label for="exampleFormControlTextarea1">Alamat</label>
+					    <textarea name="alamat" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					  </div>
+
+
+					  <div class="form-group">
+					    <label for="exampleFormControlTextarea1">Pesan</label>
+					    <textarea name="pesan" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					  </div>
+			      </div>
 
 					  	<div class="form-group">
 							    <label for="exampleFormControlTextarea1"></label>

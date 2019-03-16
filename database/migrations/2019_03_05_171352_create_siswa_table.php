@@ -19,7 +19,10 @@ class CreateSiswaTable extends Migration
             $table->string('nama_belakang');
             $table->string('jenis_kelamin');
             $table->string('agama');
+            $table->string('email');
+            $table->string('nomor_telepon');
             $table->text('alamat');
+            $table->text('pesan');
             $table->timestamps();
         });
     }
